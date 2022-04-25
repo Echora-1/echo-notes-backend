@@ -1,0 +1,27 @@
+{
+  "name": "echo-notes-backend",
+  "version": "1.0.0",
+  "description": "api for echo-notes app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Echora-1/echo-notes-backend.git"
+  },
+  "author": "Echora-1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Echora-1/echo-notes-backend/issues"
+  },
+  "homepage": "https://github.com/Echora-1/echo-notes-backend#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.6.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
