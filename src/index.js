@@ -1,53 +1,47 @@
 const express = require('express');
-const { ApolloServer, gql } = require('apollo-server-express');
+const { ApolloServer } = require('apollo-server-express');
+require('dotenv').config();
+const jwt = require('jsonwebtoken');
+const helmet = require('helmet')
+const cors = require('cors');
+const depthLimit = require('graphql-depth-limit');
+const { createComplexityLimitRule } = require('graphql-validation-complexity');
+
+const db = require('./db');
+const models = require('./models');
+const typeDefs = require('./schema');
+const resolvers = require('./resolvers');
 
 const port = process.env.PORT || 4000;
+const DB_HOST = process.env.DB_HOST;
 
-let notes = [
-    { id: '1', content: 'This is a note', author: 'Adam Scott' },
-    { id: '2', content: 'This is another note', author: 'Harlow Everly' },
-    { id: '3', content: 'Oh hey look, another note!', author: 'Riley Harrison' }
-];
+const app = express();
+app.use(helmet());
+app.use(cors());
 
-const typeDefs = gql`
- type Note {
-     id: ID!
-     content: String!
-     author: String!
- }
- type Query {
-     hello: String
-     notes: [Note!]!
-     note(id: ID!): Note!
- }
- type Mutation {
-     newNote(content: String!): Note!
- }
- `;
+db.connect(DB_HOST);
 
-const resolvers = {
-    Query: {
-        hello: () => 'Hello world!',
-        notes: () => notes,
-        note: (parent, args) => {
-            return notes.find(note => note.id === args.id);
-        }
-    },
-    Mutation: {
-        newNote: (parent, args) => {
-          let noteValue = {
-            id: String(notes.length + 1),
-            content: args.content,
-            author: 'Adam Scott'
-        };
-        notes.push(noteValue);
-        return noteValue;
+const getUser = token => {
+    if (token) {
+        try {
+            return jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            new Error('Session invalid');
         }
     }
 };
-const app = express();
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    validationRules: [depthLimit(5), createComplexityLimitRule(1000)],
+    context: ({ req }) => {
+        const token = req.headers.authorization;
+        const user = getUser(token);
+        console.log(user);
+        return { models, user };
+    }
+});
 
 server.start().then(res => {
     server.applyMiddleware({ app, path: '/api' });
@@ -57,3 +51,7 @@ server.start().then(res => {
         )
     )
 })
+
+/*
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNmVjN2MxNmU4MTg5ZmZiMDdhZTg0YiIsImlhdCI6MTY1MTQyNzQxNn0.qsw_rwhu8hZHb9h8BjhO7N4vulROp4y_uFPThCP_VAU"
+*/

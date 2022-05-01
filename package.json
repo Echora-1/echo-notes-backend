@@ -18,7 +18,15 @@
   "homepage": "https://github.com/Echora-1/echo-notes-backend#readme",
   "dependencies": {
     "apollo-server-express": "^3.6.7",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-scalars": "^1.17.0",
+    "graphql-validation-complexity": "^0.4.2",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
     "mongoose": "^6.3.1"
   },
   "devDependencies": {
