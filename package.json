@@ -2,7 +2,7 @@
   "name": "echo-notes-backend",
   "version": "1.0.0",
   "description": "api for echo-notes app",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js",
     "dev": "nodemon src/index.js"

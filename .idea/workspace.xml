@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Frontend-TBCC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Notedly" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -88,7 +88,7 @@
       <workItem from="1651260203133" duration="518000" />
       <workItem from="1651420052783" duration="2246000" />
       <workItem from="1651423627787" duration="2488000" />
-      <workItem from="1651426576208" duration="9043000" />
+      <workItem from="1651426576208" duration="9410000" />
     </task>
     <servers />
   </component>
