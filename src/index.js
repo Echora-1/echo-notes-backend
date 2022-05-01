@@ -52,6 +52,3 @@ server.start().then(res => {
     )
 })
 
-/*
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNmVjN2MxNmU4MTg5ZmZiMDdhZTg0YiIsImlhdCI6MTY1MTQyNzQxNn0.qsw_rwhu8hZHb9h8BjhO7N4vulROp4y_uFPThCP_VAU"
-*/
