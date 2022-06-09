@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77c559d2-4431-4eb4-b545-493f8808b95a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/note.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/mutation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/note.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/query.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resolvers/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/gravatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resolvers/mutation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resolvers/mutation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/gravatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/multiavatar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,25 +20,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="28I5BmfG5PKiPU1TIkJ6LFUN3lo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Notedly" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/echo-notes-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\echo-notes-backend\src" />
@@ -88,7 +81,15 @@
       <workItem from="1651260203133" duration="518000" />
       <workItem from="1651420052783" duration="2246000" />
       <workItem from="1651423627787" duration="2488000" />
-      <workItem from="1651426576208" duration="9715000" />
+      <workItem from="1651426576208" duration="10320000" />
+      <workItem from="1651476644643" duration="125000" />
+      <workItem from="1653072989979" duration="881000" />
+      <workItem from="1653147506962" duration="1214000" />
+      <workItem from="1653149259222" duration="273000" />
+      <workItem from="1653156727758" duration="116000" />
+      <workItem from="1654135243637" duration="7000" />
+      <workItem from="1654798567325" duration="32000" />
+      <workItem from="1654800976710" duration="735000" />
     </task>
     <servers />
   </component>

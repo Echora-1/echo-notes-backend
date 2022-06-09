@@ -6,7 +6,7 @@ const {
     ForbiddenError
 } = require('apollo-server-express');
 require('dotenv').config();
-const gravatar = require('../util/gravatar');
+const multiavatar = require('../util/multiavatar');
 
 
 module.exports = {
@@ -63,7 +63,7 @@ module.exports = {
     signUp: async (parent, { username, email, password }, { models }) => {
         email = email.trim().toLowerCase();
         const hashed = await bcrypt.hash(password, 10);
-        const avatar = gravatar(email);
+        const avatar = multiavatar(email);
         try {
             const user = await models.User.create({
                 username,
